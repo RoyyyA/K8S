@@ -1,2 +1,2 @@
 # K8S
-kuberneteses notes 
+kubernetes notes 
