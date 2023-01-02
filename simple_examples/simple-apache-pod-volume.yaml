@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: apache-with-volume
+spec:
+ volumes:
+ - name: apache-storage-volume
+   emptyDir: {}
+   containers:
+   - name: apache-container
+     image: httpd
+     volumeMounts:
+     - name: apache-storage-volume
+       mountPath: /data/apache-data
