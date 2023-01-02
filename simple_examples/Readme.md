@@ -1,5 +1,7 @@
 ## Simple Manifests Templates
 
+simple templates for: pod (with/out volume), service, deployments, replicaset, job, 
+
 Note that Each manifest has four necessary parts:
 1. The version of the API in use
 2. The kind of resource you’d like to define
