@@ -15,5 +15,5 @@ spec:
     app: web
   spec:
    containers:
-   - name: apache-contain
+   - name: apache-container
      image: httpd:2.4.35
