@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+ name: hello-world
+spec:
+ template:
+  metadata:
+   name: hello-world
+  spec:
+   containers:
+   - name: output
+     image: debian
+     command:
+     - “bin/bash”
+     - “-c”
+     - “echo ‘Hello World!’”
+  restartPolicy: Never
