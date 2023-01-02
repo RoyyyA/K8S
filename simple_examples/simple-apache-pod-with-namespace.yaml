@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: apache-pod
+ labels:
+  app: web
+ namespace: my-app
+spec:
+ containers:
+ - name: apache-container
+   image: httpd
